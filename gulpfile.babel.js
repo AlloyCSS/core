@@ -34,7 +34,7 @@ const AUTOPREFIXER_BROWSERS = ['last 2 versions'];
 gulp.task('lint-css', function lintCSS() {
   const gulpStylelint = require('gulp-stylelint');
   return gulp
-    .src('src/css/**/*.css')
+    .src('src/**/*.css')
     .pipe(gulpStylelint({
       reporters: [
         {formatter: 'string', console: true}
@@ -67,11 +67,11 @@ gulp.task('styles', () => {
     postcssReporter({clearMessages: true})
   ];
 // For best performance, don't add Sass partials to `gulp.src`
-return gulp.src(['src/css/*.css'])
+return gulp.src(['src/*.css'])
   .pipe($.sourcemaps.init())
   .pipe($.postcss(PROCESSORS)).on('error', gutil.log)
   .pipe($.sourcemaps.write('./'))
-  .pipe(gulp.dest('resources/public/css'));
+  .pipe(gulp.dest('dist'));
 });
 
 // Compile CSS
@@ -95,7 +95,7 @@ gulp.task('dist', () => {
     cssnano,
     postcssReporter({clearMessages: true})
   ];
-return gulp.src(['src/css/*.css'])
+return gulp.src(['src/*.css'])
   .pipe($.postcss(PROCESSORS)).on('error', gutil.log)
   .pipe(gulp.dest('dist'));
 })
@@ -107,7 +107,7 @@ gulp.task('clean', () => del(['.tmp', 'resources/public/*', '!resources/public/.
 
 // Watch files for changes & recompile
 gulp.task('watch', ['styles'], () => {
-  gulp.watch(['src/css/**/*.css'], ['styles']);
+  gulp.watch(['src/**/*.css'], ['styles']);
 });
 
 

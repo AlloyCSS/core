@@ -1,4 +1,4 @@
-@import 'untangled-ui';
+@import 'alloycss';
 
 .com-rigsomelight-devcards-markdown > div > div:empty {
   display: none;

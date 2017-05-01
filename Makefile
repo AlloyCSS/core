@@ -8,6 +8,6 @@ install:; @npm install
 
 $(files) %:;@$(bin) $@
 
-count:; find . -name '*.css' -not -path './node_modules*' | xargs wc -l
+count:; find . -name '*.css' ! -path './node_modules*' ! -path './dist*' | xargs wc -l
 
 .PHONY: install $(files) count

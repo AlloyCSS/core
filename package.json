@@ -1,5 +1,5 @@
 {
-  "name": "alloycss",
+  "name": "AlloyCSS",
   "description": "A library of component styles made with PostCSS",
   "version": "0.1.1",
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
@@ -53,12 +53,12 @@
     "postcss-reporter": "^2.0.0",
     "postcss-selector-not": "^2.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "psi": "^2.0.2",
+    "psi": "3.0.0",
     "run-sequence": "^1.0.1",
     "stylelint": "^7.0.2",
     "stylelint-config-guidelines": "^1.1.0",
-    "stylelint-order": "^0.3.0",
-    "sw-precache": "^4.3.0"
+    "stylelint-order": "0.4.3",
+    "sw-precache": "5.1.0"
   },
   "dependencies": {
     "react-frame-component": "^1.0.0"

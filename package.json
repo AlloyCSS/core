@@ -1,7 +1,7 @@
 {
   "name": "alloycss",
   "description": "A library of component styles made with PostCSS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "license": "MIT",
   "main": "src/alloy.css",

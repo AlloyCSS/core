@@ -46,9 +46,10 @@
     margin: 48px auto;
   }
 
-  .c-dialog--disableOverflow & {
-    overflow-y: initial;
-    overflow-x: initial;
+  .c-dialog--disableOverflow &,
+  .c-dialog--disableOverflow & .c-dialog__content {
+    overflow-y: initial !important;
+    overflow-x: initial !important;
   }
 
   &.c-dialog__card--xs {
